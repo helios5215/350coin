@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Científicos lanzan 350.000 monedas al aire</title>
+</head>
+
+<body>
+    <h1>Científicos lanzan 350.000 monedas al aire y revelan qué lado es más probable que salga</h1>
+    <ul>
+        <li><a href="#res">Resultados</a></li>
+        <li><a href="#dis">Discusion</a></li>
+        <li><a href="https://arxiv.org/abs/2310.04153">Probabilidad</a></li>
+        <li><a
+                href="https://es.wired.com/articulos/ignobel-2024-de-gusanos-borrachos-a-palomas-bombarderas-experimentos-cientificos-mas-locos">IgNobel</a>
+        </li>
+        <li><a href="https://arxiv.org/pdf/2310.04153v1">PDF</a></li>
+    </ul>
+    <h2>Introduccion</h2>
+    <p>Muchas personas han lanzado monedas, pero pocas se han detenido a reflexionar sobre las complejidades físicas y
+        estadísticas del proceso. En un estudio preinscrito, recopilamos 350.757 lanzamientos de moneda para probar la
+        predicción contraintuitiva de un modelo de física del lanzamiento de moneda humano desarrollado por Persi
+        Diaconis. El modelo afirma que cuando las personas lanzan una moneda común, tiende a caer en el mismo lado en el
+        que comenzó: Diaconis estimó que la probabilidad de un resultado del mismo lado es de aproximadamente el 51%.
+        Nuestros datos respaldan firmemente esta predicción precisa: las monedas cayeron en el mismo lado con más
+        frecuencia que no.Pr ( mismo lado ) = 0,508, intervalo de confianza del 95% (IC) [0,506,0,509],BFsesgo del mismo
+        lado= 2364Además, los datos revelaron una considerable variación entre personas en el grado de este sesgo hacia
+        el mismo lado. Nuestros datos también confirmaron la predicción genérica de que cuando las personas lanzan una
+        moneda común y corriente (con el lado inicial hacia arriba determinado al azar) es igualmente probable que caiga
+        cara o cruz:Pr ( caras ) = ​​0,500, IC del 95% [0,498,0,502],BFsesgo de cara o cruz= 0,183Además, esta falta de
+        sesgo de cara o cruz no parece variar entre monedas. Por lo tanto, nuestros datos proporcionan evidencia sólida
+        de que cuando algunas personas (pero no todas) lanzan una moneda justa, esta tiende a caer en el mismo lado en
+        el que comenzó. Nuestros datos brindan un respaldo estadístico convincente al modelo físico de Diaconis sobre el
+        lanzamiento de una moneda.</p>
+    <a name="res"></a>
+    <h2>Resultados</h2>
+    <p>Un grupo de 48 personas (es decir, todos los coautores menos tres) lanzaron monedas de 46 monedas × denominaciones diferentes.
+        y obtuvo un total de 350.757 lanzamientos de moneda. Datos brutos, grabaciones de vídeo de los lanzamientos de moneda y los prerregistrados
+        El plan de análisis se puede encontrar en https://osf.io/pxu6r/. Los datos confirman la predicción del modelo Diaconis:
+        las monedas aterrizaron como empezaron con más frecuencia del 50%. En concreto, los datos recogen 178.078 aterrizajes en el mismo lado
+        de 350.757 lanzamientos, Pr(mismo lado) = 0,508, IC del 95 % [0,506, 0,509] (consulte la Tabla 1 para ver un resumen por persona), que es
+        notablemente cerca de la predicción de Diaconis de (aproximadamente) 51%.
+        Además, los datos no muestran ningún rastro de sesgo cara-cruz. En concreto, obtuvimos 175.420 caras de 350.757 lanzamientos,
+        Pr(caras) = ​​0,500, IC del 95 % [0,498, 0,502] (consulte la Tabla 2 en la sección de métodos para obtener un resumen por moneda).
+        Una prueba de hipótesis binomial informada bayesiana preregistrada2
+        indica evidencia extrema a favor del sesgo del mismo lado
+        predicho por el modelo Diaconis, BFsesgo del mismo lado = 1,71 × 1017. Un análisis similar (no registrado previamente) arroja resultados moderados.
+        evidencia contra la presencia de un sesgo cara-cruz, BF sesgo cabeza-cruz = 0,168.
+        Con los datos en la mano nos dimos cuenta de que el sesgo del mismo lado posiblemente estaba sujeto a considerables diferencias entre personas.
+        heterogeneidad. Por lo tanto, especificamos un modelo jerárquico bayesiano más complejo que incluye tanto la heterogeneidad como la
+        en el sesgo del mismo lado entre personas y en la heterogeneidad en el sesgo de cara y cruz entre monedas; este modelo jerárquico fue
+        luego se utiliza para estimar los parámetros y probar las hipótesis utilizando el promedio del modelo bayesiano y la inclusión de Bayes.
+        factores (para más detalles consulte la sección de métodos). Estos análisis no fueron prerregistrados. La distribución posterior de la
+        El sesgo del mismo lado es ligeramente más amplio que en el análisis prerregistrado simple, Pr(mismo lado) = 0,5098, IC del 95 % [0,5049,
+        0.5147], que es causado por la sustancial heterogeneidad entre personas en la probabilidad de que la moneda aterrice en el
+        mismo lado, sdpeople(psame-side) = 0,0156, IC del 95 % [0,0119, 0,0200]. La incertidumbre adicional reduce la evidencia de
+        el sesgo del mismo lado a BFsesgo del mismo lado = 2364, que sin embargo sigue siendo extremo (por ejemplo, cuando la hipótesis de un sesgo del mismo lado
+        el sesgo tiene una probabilidad previa de 0,50, un factor de Bayes de aproximadamente 2364 da como resultado una probabilidad posterior de 0,9996). Coherente
+        Con la impresión visual de la Figura 1, el modelo jerárquico revela evidencia abrumadora de la presencia de
+        heterogeneidad entre personas en sesgo del mismo lado, heterogeneidad de personas BF = 3,04 × 1024.
+        Las estimaciones posteriores de la probabilidad global de cara se mantienen prácticamente sin cambios, Pr(cara) = 0,5005, 95%
+        IC [0,4986, 0,5026] prácticamente sin heterogeneidad entre monedas, sdcoins(Pr(heads)) = 0,0019, IC del 95% [0,0002,
+        0,0048]. La evidencia contra la presencia del sesgo cara-cruz también permanece prácticamente sin cambios, BFsesgo cabeza-cruz =
+        0,183. El modelo muestra evidencia moderada contra la presencia de heterogeneidad entre monedas en el sesgo cara-cruz,
+        Heterogeneidad de BFcoin = 0,179.
+        Repetimos los análisis estadísticos después de excluir cuatro valores atípicos potenciales con proporciones de muestra del mismo lado mayores.
+        más del 53% (es decir, las cuatro estimaciones más grandes y situadas más a la derecha en el panel superior de la Figura 1), pero esto no refleja cualitativamente
+        afectar la conclusión. La distribución posterior del sesgo del mismo lado y la heterogeneidad entre personas en
+        la probabilidad de que la moneda caiga en el sesgo del mismo lado disminuye, Pr(mismo lado) = 0,5060, IC del 95% [0,5031,
+        0,5089] y sdpeople(psame lado) = 0,0072, IC del 95% [0,0049, 0,0099], mientras que la distribución posterior del total
+        la probabilidad de que salga cara y la heterogeneidad entre monedas en la probabilidad de que salga cara permanece prácticamente sin cambios,
+        Pr(caras) = ​​0,5008, IC del 95 % [0,4988, 0,5031] y sdcoins(Pr(cabezas)) = 0,0021, IC del 95 % [0,0002, 0,0051]. El
+        La evidencia del sesgo del mismo lado y la heterogeneidad entre personas en el sesgo del mismo lado disminuye pero permanece.
+        extremo, sesgo BF del mismo lado = 793 y heterogeneidad de personas BF = 2,84 × 107
+        , mientras que la evidencia contra el sesgo cara-cruz
+        y contra la heterogeneidad entre monedas en el sesgo cara-cruz permanece prácticamente sin cambios, sesgo BF cara-cruz = 0,213 y
+        Heterogeneidad de BFcoin = 0,222.
+    </p>
+    <a name="dis"></a>
+    <h2>Discusión</h2>
+    <p>Recopilamos 350.757 lanzamientos de monedas y encontramos una fuerte confirmación empírica de la predicción contraintuitiva y precisa.
+        del modelo de lanzamiento de moneda humano de Persi Diaconis: cuando la gente lanza una moneda, tiende a caer en el mismo lado que
+        comenzó. Además, los datos revelaron un grado sustancial de variabilidad entre personas en el sesgo hacia el mismo lado: como puede verse
+        Según la Figura 1, algunas personas parecen tener poco o ningún sesgo hacia el mismo lado, mientras que otras sí muestran un sesgo hacia el mismo lado, aunque
+        en diversos grados. Esta variabilidad es consistente con el modelo de Diaconis, en el que el sesgo del mismo lado se origina a partir de
+        rotaciones fuera del eje (es decir, precesión o tambaleo), que se puede suponer razonablemente que varían entre personas. Futuro
+        El trabajo puede intentar verificar si los “lanzadores tambaleantes” muestran un sesgo hacia el mismo lado más pronunciado que los “lanzadores estables”. El
+        El esfuerzo requerido para probar esta hipótesis más detallada parece ser excesivo, ya que implicaría análisis detallados de
+        Grabaciones de cámara de alta velocidad para giros individuales (cf. [12]).
+        Para garantizar la calidad de los datos, grabamos en vídeo y auditamos el procedimiento de recopilación de datos (consulte el método
+        sección para más detalles). Sin embargo, sigue existiendo una preocupación legítima: en el momento en que la gente lanzaba las monedas
+        eran conscientes de la principal hipótesis bajo prueba. Por lo tanto, no se puede excluir que algunos de los participantes pudieran
+        manipular los resultados del lanzamiento de la moneda para producir el sesgo del mismo lado. A la luz de la naturaleza del lanzamiento de moneda
+        proceso, la evidencia de las grabaciones de video y la correspondencia precisa entre los datos y las predicciones
+        desde el modelo de Diaconis, consideramos improbable esta posibilidad; Se necesita trabajo futuro para refutarlo de manera concluyente (por ejemplo, mediante
+        ocultando el objetivo del estudio).
+        ¿Podrían los futuros lanzadores de monedas utilizar el sesgo del mismo lado a su favor? La magnitud del sesgo observado puede ser
+        ilustrado utilizando un escenario de apuestas. Si apuesta un dólar al resultado de un lanzamiento de moneda (es decir, paga 1 dólar para participar y
+        ganando 0 o 2 dólares dependiendo del resultado) y repetir la apuesta 1.000 veces, conociendo la posición inicial
+        del lanzamiento de la moneda le haría ganar 19 dólares en promedio. Esto es más que la ventaja del casino para el blackjack de 6 mazos
+        contra un jugador de estrategia óptima, donde el casino ganaría 5 dólares con una apuesta comparable, pero menos que el casino
+        ventaja para la ruleta de un solo cero, donde el casino ganaría 27 dólares en promedio [17]. Estas consideraciones conducen
+        sugerir que cuando se utilizan lanzamientos de moneda para la toma de decisiones de alto riesgo, la posición inicial de la moneda es la mejor
+        excusado.
+    </p>
+</body>
